@@ -5,14 +5,14 @@ resources:
   - deployment.yaml
   - service.yaml
 
-namespace: monitoring
+namespace: default
 
 commonLabels:
   app: alertmanager-webhook-dingtalk
 
-replicas:
-  - name: alertmanager-webhook-dingtalk
-    count: 1
+#replicas:
+#  - name: alertmanager-webhook-dingtalk
+#    count: 1
 
 images:
   - name: timonwong/prometheus-webhook-dingtalk
